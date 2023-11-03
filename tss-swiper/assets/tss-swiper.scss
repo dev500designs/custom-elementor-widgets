@@ -103,7 +103,11 @@ $grey: #b7b7b8;
       transform: translateY(0);
     }
   }
-
+  @media (min-width: 1800px) {
+    .swiper-slide {
+      width: 20% !important;
+    }
+  }
   @media (max-width: 1024px) {
     .swiper-slide {
       width: 280px !important;

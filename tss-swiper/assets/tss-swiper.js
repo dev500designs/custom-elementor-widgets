@@ -19,17 +19,15 @@ jQuery(document).ready(function ($) {
         new Swiper(swiper, {
             slidesPerView: 'auto',
             spaceBetween: 0,
-            loop: true,
+            loop: false,
+            centeredSlides: false,
             lazyLoading: true,
             keyboard: {
                 enabled: true
             },
             breakpoints: {
-                768: {
-                    slidesPerView: 4
-                },
-                1200: {
-                    slidesPerView: 4
+                1400: {
+                    centeredSlides: false,
                 }
             }
         });

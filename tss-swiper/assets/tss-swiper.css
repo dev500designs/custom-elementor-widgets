@@ -97,6 +97,11 @@
     transform: translateY(0);
   }
 }
+@media (min-width: 1800px) {
+  #tssSwiper .swiper-slide {
+    width: 20% !important;
+  }
+}
 @media (max-width: 1024px) {
   #tssSwiper .swiper-slide {
     width: 280px !important;

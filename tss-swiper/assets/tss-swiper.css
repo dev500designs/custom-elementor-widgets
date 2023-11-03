@@ -39,7 +39,8 @@
   border-left: 1px solid #b7b7b8;
 }
 #tssSwiper .swiper-slide * {
-  transition: all ease-in 0.5s;
+  transition: all ease-in-out 0.3s;
+  /* transition: height 0.3s ease-in-out, margin 0.3s ease-in-out; */
 }
 #tssSwiper .swiper-slide .number {
   font-size: 24px;
@@ -67,8 +68,8 @@
   font-family: Inter;
   font-weight: 300;
   line-height: 1.1;
-  display: none;
-  margin-bottom: -20px;
+  height: 1px;
+  opacity: 0;
 }
 #tssSwiper .swiper-slide:hover {
   background-color: #87eba8;
@@ -76,26 +77,9 @@
 #tssSwiper .swiper-slide:hover .img-wrap {
   margin-top: -20px;
 }
-#tssSwiper .swiper-slide:hover .title {
-  margin-top: -20px;
-}
 #tssSwiper .swiper-slide:hover .desc {
-  display: block;
-  margin-bottom: 0;
-  /* visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0s; */
-}
-@keyframes slideUp {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  height: auto;
+  opacity: 1;
 }
 @media (min-width: 1800px) {
   #tssSwiper .swiper-slide {

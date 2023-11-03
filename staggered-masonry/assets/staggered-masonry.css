@@ -1,0 +1,239 @@
+/* html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  height: 100%;
+} */
+
+/* body {
+  margin: 0;
+  min-height: 100%;
+  color: #333;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+} */
+
+#staggeredMasonry * {
+  box-sizing: border-box;
+}
+
+#staggeredMasonry img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  /* object-fit: cover; */
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+#staggeredMasonry .container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.08em;
+}
+
+#staggeredMasonry .container.is--grid {
+  padding-bottom: 0;
+}
+
+#staggeredMasonry .grid_img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+#staggeredMasonry .grid_item {
+  padding: 0.36em;
+}
+
+#staggeredMasonry .grid_element {
+  width: 100%;
+  padding-top: 131%;
+  position: relative;
+}
+
+#staggeredMasonry .grid_list {
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* padding-top: 3.6em; */
+  display: flex;
+  margin-top: -2em;
+}
+
+#staggeredMasonry .grid_wrapper {
+  z-index: 2;
+  position: relative;
+  margin-bottom: -100px;
+}
+
+#staggeredMasonry .grid_wrapper.is--alt {
+  padding-bottom: 23.7em;
+}
+
+#staggeredMasonry .grid_text-wrap {
+  z-index: 1;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: -50vh;
+  padding-bottom: 2.08em;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#staggeredMasonry .grid_text-title {
+  letter-spacing: -0.04em;
+  font-size: 21.88em;
+  font-weight: 700;
+  line-height: 0.8;
+  position: relative;
+}
+
+.nav_logo-contain {
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+#staggeredMasonry .grid_text-list {
+  margin-left: -0.5em;
+  position: relative;
+}
+
+#staggeredMasonry .grid_text-item {
+  opacity: 0;
+  font-size: 1em;
+  transition: opacity 0.1s;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+#staggeredMasonry .heading {
+  line-height: 0.8;
+  overflow: visible;
+}
+
+#staggeredMasonry .body {
+  background-color: #0d1924;
+}
+
+#staggeredMasonry .heading-2 {
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+#staggeredMasonry .image {
+  max-width: 50px;
+  margin: auto auto 20ch;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+#staggeredMasonry .grid_item:nth-child(6n + 1) {
+  width: 25%;
+  margin-right: 4.25%;
+}
+
+#staggeredMasonry .grid_item:nth-child(6n + 2) {
+  width: 21.75%;
+  margin-right: 4.25%;
+  margin-top: 20%;
+}
+
+#staggeredMasonry .grid_item:nth-child(6n + 3) {
+  width: 16.5%;
+  margin-top: 4%;
+  margin-right: 1%;
+}
+
+#staggeredMasonry .grid_item:nth-child(6n + 4) {
+  width: 27.25%;
+  margin-top: 24%;
+}
+
+#staggeredMasonry .grid_item:nth-child(6n + 5) {
+  width: 31.25%;
+  margin-right: 6.25%;
+  margin-top: -12%;
+}
+
+#staggeredMasonry .grid_item:nth-child(6n + 6) {
+  width: 25%;
+  margin-right: 25%;
+  margin-top: -8%;
+}
+
+#staggeredMasonry .top-spacer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sibling-main {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.sibling-fixed {
+  position: fixed;
+}
+
+#staggeredMasonry {
+  margin-top: 700px;
+  margin-bottom: 8vh;
+}
+
+@media screen and (max-width: 768px) {
+  #staggeredMasonry {
+    margin-top: 450px;
+  }
+  #staggeredMasonry img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #staggeredMasonry .container {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #staggeredMasonry .grid_wrapper {
+    margin-bottom: 50px;
+  }
+  #staggeredMasonry .grid_item:nth-child(6n + 2) {
+    width: 30.75%;
+  }
+  #staggeredMasonry .grid_item:nth-child(6n + 3) {
+    width: 31.5%;
+  }
+  #staggeredMasonry .grid_item:nth-child(6n + 4) {
+    margin-top: -4%;
+  }
+}

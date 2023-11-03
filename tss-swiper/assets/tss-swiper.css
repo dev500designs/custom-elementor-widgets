@@ -53,7 +53,7 @@
   width: calc(100% + 60px);
 }
 #tssSwiper .swiper-slide .img-wrap img {
-  max-width: 95% !important;
+  max-width: 100% !important;
 }
 #tssSwiper .swiper-slide .title {
   margin-top: auto;

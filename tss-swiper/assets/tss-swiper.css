@@ -28,7 +28,7 @@
   flex-shrink: 0;
   position: relative;
   width: 400px !important;
-  height: 620px;
+  height: 640px;
   /* height: auto; */
   padding: 30px 30px;
   border-top: 1px solid #b7b7b8;
@@ -75,6 +75,9 @@
   background-color: #87eba8;
 }
 #tssSwiper .swiper-slide:hover .img-wrap {
+  margin-top: -10px;
+}
+#tssSwiper .swiper-slide:hover .title {
   margin-top: -20px;
 }
 #tssSwiper .swiper-slide:hover .desc {
@@ -84,6 +87,9 @@
 @media (min-width: 1800px) {
   #tssSwiper .swiper-slide {
     width: 20% !important;
+  }
+  #tssSwiper .swiper-slide:nth-child(2) .desc {
+    /* font-size: 15px; */
   }
 }
 @media (max-width: 1024px) {
@@ -109,7 +115,6 @@
     font-style: normal;
   }
   #tssSwiper .swiper-slide .desc {
-    display: block !important;
     margin-bottom: 0;
     font-size: 14px;
   }

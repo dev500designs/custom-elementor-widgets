@@ -30,9 +30,8 @@ $grey: #b7b7b8;
     justify-content: space-between;
     flex-shrink: 0;
     position: relative;
-    width: 400px !important;
+    width: 430px;
     height: 640px;
-    /* height: auto; */
     padding: 30px 30px;
     border-top: 1px solid $grey;
     border-right: 1px solid $grey;
@@ -53,12 +52,19 @@ $grey: #b7b7b8;
       position: relative;
       left: -30px;
       width: calc(100% + 60px);
+      flex: 1;
+      overflow: hidden;
+      margin: 0 0 auto 0;
       img {
         max-width: 100% !important;
       }
     }
+    .text-wrap {
+      margin-top: 20px;
+    }
     .title {
       margin-top: auto;
+      margin-bottom: 15px;
       padding: 0;
       font-size: 28px;
       font-family: "Clash Grotesk Regular", sans-serif;
@@ -71,34 +77,33 @@ $grey: #b7b7b8;
       font-family: Inter;
       font-weight: 300;
       line-height: 1.1;
-      height: 1px;
-      opacity: 0;
+      height: auto;
+      opacity: 1;
+      /* position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 30px; */
+    }
+
+    &:not(:hover) {
+      .desc {
+        height: 1px;
+        opacity: 0;
+      }
     }
 
     &:hover {
       background-color: $lime;
       .img-wrap {
-        margin-top: -10px;
-      }
-      .title {
-        margin-top: -20px;
+        margin-top: -25px;
       }
       .desc {
-        height: auto;
         opacity: 1;
       }
     }
   }
 
   @media (min-width: 1800px) {
-    .swiper-slide {
-      width: 20% !important;
-      &:nth-child(2) {
-        .desc {
-          /* font-size: 15px; */
-        }
-      }
-    }
   }
   @media (max-width: 1024px) {
     .swiper-slide {

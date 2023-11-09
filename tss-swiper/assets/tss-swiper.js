@@ -52,30 +52,4 @@ jQuery(document).ready(function ($) {
         }
     }
     document.addEventListener("pointermove", pointermoveHandler);
-
-    function fitTextToHeight(selector, maxHeight) {
-        const elements = document.querySelectorAll(selector);
-
-        elements.forEach(function (element) {
-            let computedStyle = window.getComputedStyle(element);
-            let fontSize = parseInt(computedStyle.getPropertyValue('font-size'));
-            let lineHeight = parseInt(computedStyle.getPropertyValue('line-height'));
-
-            // Reduce font size until the content fits the specified height
-            while ((element.scrollHeight > maxHeight) && (fontSize > 0)) {
-                fontSize--;
-                lineHeight = fontSize * 1.2; // Assuming line-height to be 1.2 times the font-size
-                element.style.fontSize = fontSize + 'px';
-                element.style.lineHeight = lineHeight + 'px';
-            }
-        });
-    }
-
-    // fitTextToHeight('#tssSwiper .desc', 90);
-
-    // Optionally, re-adjust on window resize
-    window.addEventListener('resize', (event) => {
-        // fitTextToHeight('#tssSwiper .desc', 90);
-    });
-
 });

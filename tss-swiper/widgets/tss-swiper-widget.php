@@ -31,6 +31,18 @@ class TSS_Swiper_Widget extends \Elementor\Widget_Base {
             ]
         );
 
+        $this->add_control(
+            'show_slide_numbers',
+            [
+                'label' => __( 'Show Slide Numbers', 'tss-swiper' ),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __( 'Show', 'tss-swiper' ),
+                'label_off' => __( 'Hide', 'tss-swiper' ),
+                'return_value' => 'yes',
+                'default' => 'no',
+            ]
+        );
+
         $repeater = new \Elementor\Repeater();
 
         $repeater->add_control(
@@ -76,6 +88,7 @@ class TSS_Swiper_Widget extends \Elementor\Widget_Base {
             ]
         );
 
+    
         $this->end_controls_section();
     }
 

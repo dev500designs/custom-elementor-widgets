@@ -1,4 +1,5 @@
 jQuery(document).ready(function ($) {
+    
     console.log("init tss-swiper v1.3");
     var swiperContainer = $('.tss-swiper').closest('.e-con-inner');
     swiperContainer.css({
@@ -52,4 +53,8 @@ jQuery(document).ready(function ($) {
         }
     }
     document.addEventListener("pointermove", pointermoveHandler);
+
+
+
+
 });

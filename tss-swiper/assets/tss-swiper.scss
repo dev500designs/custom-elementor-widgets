@@ -27,12 +27,13 @@ $grey: #b7b7b8;
   .swiper-slide {
     display: flex;
     flex-direction: column;
+    background-color: #F8F8F8;
     justify-content: start;
     flex-shrink: 0;
     position: relative;
     width: 430px;
-    height: 640px;
-    padding: 25px 30px;
+    height: auto;
+    padding: 25px 30px 130px 30px;
     border-top: 1px solid $grey;
     border-right: 1px solid $grey;
     border-bottom: 1px solid $grey;
@@ -40,7 +41,7 @@ $grey: #b7b7b8;
       border-left: 1px solid $grey;
     }
     * {
-      transition: all ease-in-out 0.3s;
+      transition: all ease-in-out 0.2s;
       /* transition: height 0.3s ease-in-out, margin 0.3s ease-in-out; */
     }
     .number {
@@ -103,21 +104,18 @@ $grey: #b7b7b8;
     }
   }
   @media (min-width: 1025px) {
-    .swiper-slide:hover {
-      background-color: $lime;
+    .swiper-slide {
       .img-wrap {
+        height: 400px;
       }
+    }
+    .swiper-slide:hover {
       .text-wrap {
         background-color: $lime;
       }
       .desc {
         height: auto;
         opacity: 1;
-      }
-    }
-    .swiper-slide:nth-child(2):hover {
-      .desc {
-        /* height: 100px; */
       }
     }
   }
@@ -137,7 +135,6 @@ $grey: #b7b7b8;
         min-height: auto;
         position: relative;
         padding: 15px 0 0 0;
-        background-color: white;
       }
       .title {
         font-style: normal;

@@ -1,0 +1,39 @@
+.add-image-dialog {
+  &.open {
+    z-index: 99999 !important;
+  }
+
+  .dialog-content {
+    min-width: 500px;
+  }
+
+  .dialog-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .dialog-footer {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+
+  .tip {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #707070;
+  }
+
+  select,
+  input {
+    border: none;
+    background: #fff;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 36px;
+    min-height: 38px;
+    font-weight: 400;
+    padding-left: 12px;
+  }
+}

@@ -1,0 +1,18 @@
+.filter-dropdown {
+  align-items: center;
+  display: flex;
+  white-space: nowrap;
+  gap: 8px;
+
+  span {
+    font-size: 16px;
+  }
+
+  select {
+    height: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 8px;
+    min-width: 96px;
+  }
+}

@@ -1,0 +1,78 @@
+.social-share-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  .social-share-button {
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .social-share-options {
+    display: flex;
+    margin-left: 8px;
+    transition: opacity .3s, visibility .3s;
+    padding: 4px 6px;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #bebebe;
+    gap: 5px;
+    position: absolute;
+    left: 105%;
+    bottom: 0;
+    background: white;
+    z-index: 9999;
+    @media (max-width: 1024px) {
+      left: auto;
+      right: -10px;
+    }
+  }
+
+  .social-share-option {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    height: auto;
+    svg {
+      width: 40px;
+      height: 40px;
+      path:first-child {
+        fill: #122E50;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    &.email {
+      color: #dddddd;
+    }
+    &.facebook {
+      color: #3b5998;
+    }
+    &.linkedin {
+      color: #0077b5;
+    }
+    &.twitter {
+      color: #1da1f2;
+    }
+    &.pinterest {
+      color: #bd081c;
+    }
+  }
+}

@@ -1,0 +1,755 @@
+{
+	"info": {
+		"_postman_id": "42c9d896-33d3-48ed-aa2d-535d08fa524d",
+		"name": "NHT local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14663352"
+	},
+	"item": [
+		{
+			"name": "get project",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/project/62057",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"project",
+						"62057"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get project 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/project/62179",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"project",
+						"62179"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get my galleris",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/galleries/4456",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"galleries",
+						"4456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get gallery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/63246",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"63246"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get gallery 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/63648",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"63648"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get gallery 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/63506",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"63506"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get gallery 2 paged",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/63506?page=1&per_page=12&sort_published_date=asc&filter_by_",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"63506"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "12"
+						},
+						{
+							"key": "sort_published_date",
+							"value": "asc"
+						},
+						{
+							"key": "filter_by_",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get gallery filtered",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/63506?page=1&per_page=12&filter_by_category=Floor Plan/Site Plans&sort_by_date=asc",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"63506"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "12"
+						},
+						{
+							"key": "filter_by_category",
+							"value": "Floor Plan/Site Plans"
+						},
+						{
+							"key": "sort_by_date",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get gallery sorted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/63506?page=1&per_page=12&sort_by_date=asc",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"63506"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "12"
+						},
+						{
+							"key": "sort_by_date",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get gallery sorted desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/63506?page=1&per_page=12&sort_by_date=desc",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"63506"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "12"
+						},
+						{
+							"key": "sort_by_date",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all gallery images",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/all-gallery-images/63506",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"all-gallery-images",
+						"63506"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single media",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/media/41653",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"media",
+						"41653"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add gallery items",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "p0Vu ekpl NlU6 ibYQ RIP0 syA0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    41623,\n    41624,\n    41625,\n    41626,\n    41627,\n    41628,\n    41629,\n    41630,\n    41631,\n    41632,\n    41633,\n    41639,\n    41640,\n    41641,\n    41642,\n    41643,\n    41644,\n    41534,\n    41535,\n    41536,\n    41537,\n    41538,\n    41539,\n    41540,\n    41541,\n    41542,\n    41543,\n    41544,\n    41545,\n    41546,\n    41547,\n    41548,\n    41549,\n    41550,\n    41551,\n    41552,\n    41553,\n    41554,\n    41555,\n    41556,\n    41557,\n    41558,\n    41559,\n    41560,\n    41561\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/items/add/63799",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"items",
+						"add",
+						"63799"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove gallery items",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "p0Vu ekpl NlU6 ibYQ RIP0 syA0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    41557,\n    41558,\n    41559,\n    41560\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/items/remove/63799",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"items",
+						"remove",
+						"63799"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "replace gallery items",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "p0Vu ekpl NlU6 ibYQ RIP0 syA0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    41560,\n    41555,\n    41556,\n    41557,\n    41558,\n    41559\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/items/replace/63506",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"items",
+						"replace",
+						"63506"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clear gallery items",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "p0Vu ekpl NlU6 ibYQ RIP0 syA0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/items/replace/63799",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"items",
+						"replace",
+						"63799"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update gallery name",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "p0Vu ekpl NlU6 ibYQ RIP0 syA0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"hello world asdas asdasdd\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/rename/63506",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"rename",
+						"63506"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update media notes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "p0Vu ekpl NlU6 ibYQ RIP0 syA0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"image_notes\": \"sdfs afsadfsddgdfgfdgf \"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/media/update-notes/41653",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"media",
+						"update-notes",
+						"41653"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new Gallery",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "p0Vu ekpl NlU6 ibYQ RIP0 syA0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"new_gallery_name\": \"hello world new\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/create",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clone a Gallery",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "p0Vu ekpl NlU6 ibYQ RIP0 syA0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name_for_clone\": \"hello world cloned lorem \"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://new-home-trends.local/wp-json/nht/v1/gallery/clone/63246",
+					"protocol": "https",
+					"host": [
+						"new-home-trends",
+						"local"
+					],
+					"path": [
+						"wp-json",
+						"nht",
+						"v1",
+						"gallery",
+						"clone",
+						"63246"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

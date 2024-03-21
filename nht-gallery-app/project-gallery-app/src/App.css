@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  position: relative;
+}
+
+.wrapper > * {
+  flex-grow: 1;
+}
+
+.header {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+  flex-wrap: wrap;
+  max-width: 540px;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  #nht-project-gallery-app-root {
+    .header {
+      position: absolute;
+    }
+  }
+}
+@media screen and (max-width: 1180px) {
+  .header {
+    align-self: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #nht-project-gallery-app-root {
+    .wrapper {
+      margin: 20px;
+    }
+    .header {
+      max-width: calc(100vw - 60px);
+      .row:first-child {
+        flex-direction: row;
+      }
+      .row {
+        display: flex;
+        flex-direction: column;
+      }
+      button:not(.primary) {
+        font-size: 12px;
+      }
+      button.primary {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
+      .filter-dropdown {
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

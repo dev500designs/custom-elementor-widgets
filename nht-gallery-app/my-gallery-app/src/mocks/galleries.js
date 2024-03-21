@@ -1,0 +1,51 @@
+export const galleries = [
+  {
+    id: 63765,
+    title: "Gallery 1",
+    author: "James Lacandula",
+    first_image_thumbnail: "https://500client-new-home-trends.local/wp-content/uploads/2024/01/17-250x250.jpg",
+    images_count: 3,
+  },
+  {
+    id: 63766,
+    title: "Gallery 2",
+    author: "James Lacandula",
+    first_image_thumbnail: "https://500client-new-home-trends.local/wp-content/uploads/2024/01/40-250x250.jpg",
+    images_count: 7,
+  },
+  {
+    id: 63767,
+    title: "Gallery 3",
+    author: "James Lacandula",
+    first_image_thumbnail: "https://500client-new-home-trends.local/wp-content/uploads/2024/01/17-250x250.jpg",
+    images_count: 7,
+  },
+  {
+    id: 63768,
+    title: "Gallery 4",
+    author: "James Lacandula",
+    first_image_thumbnail: undefined,
+    images_count: 2,
+  },
+  {
+    id: 63769,
+    title: "Gallery 2",
+    author: "James Lacandula",
+    first_image_thumbnail: "https://500client-new-home-trends.local/wp-content/uploads/2024/01/40-250x250.jpg",
+    images_count: 7,
+  },
+  {
+    id: 63770,
+    title: "Gallery 3",
+    author: "James Lacandula",
+    first_image_thumbnail: "https://500client-new-home-trends.local/wp-content/uploads/2024/01/17-250x250.jpg",
+    images_count: 7,
+  },
+  {
+    id: 63771,
+    title: "Gallery 4",
+    author: "James Lacandula",
+    first_image_thumbnail: undefined,
+    images_count: 2,
+  },
+];

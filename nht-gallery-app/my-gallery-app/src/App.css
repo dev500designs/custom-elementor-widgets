@@ -1,0 +1,153 @@
+.app {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.app-header-container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #0190c4 0, #0991ab 100%);
+  color: white;
+}
+
+.app-header {
+  display: flex;
+  max-width: 1450px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 24px;
+
+  h1 {
+    font-size: 80px;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  @media screen and (max-width: 1200px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
+.add-gallery-btn {
+  display: block;
+  font-size: 20px;
+  padding: 17px 30px !important;
+
+  &:hover,
+  &:focus {
+    background-color: #112e50 !important;
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
+
+.galleries-main-container {
+  max-width: 1450px;
+  width: 100%;
+}
+
+.galleries-container {
+  margin: 24px 0;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: start;
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 576px) {
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item-container {
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+    .gallery-name {
+      margin-top: 18px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &:hover {
+      .gallery-name {
+        color: #2f7fdc;
+      }
+    }
+  }
+
+  .gallery-thumbnail-container {
+    position: relative;
+    padding: 14px;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      border: 1px solid #f2f2f2;
+      content: "";
+    }
+
+    &:before {
+      -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      z-index: 0;
+    }
+
+    &:after {
+      z-index: 2;
+    }
+  }
+
+  .gallery-thumbnail {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 307/230;
+    object-fit: cover;
+    position: relative;
+    z-index: 3;
+  }
+
+  .gallery-item-count {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 4;
+    width: 23px;
+    height: 23px;
+    background: #2f7fdc;
+    color: #fff;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+}

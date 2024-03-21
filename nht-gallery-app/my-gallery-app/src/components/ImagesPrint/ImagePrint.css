@@ -1,0 +1,50 @@
+
+.images-print-container {
+  padding: 25px;
+
+  .title {
+    margin-bottom: 20px;
+  }
+}
+
+.image-src {
+  width: 766px;
+  height: 550px;
+  object-fit: cover;
+}
+
+.image-header {
+  margin: 10px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.image-info {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.image-info > div {
+  flex: 1 1 0px;
+  padding-right: 20px;
+}
+
+.image-info h3 {
+  margin: 0 0 10px 0;
+}
+
+.image-info span {
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+@media print {
+  .pagebreak {
+    margin-top: 1rem;
+    display: block;
+    page-break-before: always;
+  }
+}

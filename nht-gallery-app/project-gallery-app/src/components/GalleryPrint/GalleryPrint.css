@@ -1,0 +1,55 @@
+.gallery-print-container {
+  padding: 24px;
+
+  .builders-info {
+    display: flex;
+    gap: 24px;
+  }
+
+  .featured-image {
+    display: block;
+    margin: 24px auto;
+    max-height: 400px;
+  }
+
+  .featured-content {
+    background-color: #f1f1f1;
+    margin: 12px 0;
+    padding: 12px;
+  }
+
+  .consultant-item {
+    border-bottom: 1px solid gray;
+
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+
+  .consultant-value {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .label-with-icon {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .location-label {
+    font-weight: 700;
+  }
+
+  .location-field {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+  }
+}
